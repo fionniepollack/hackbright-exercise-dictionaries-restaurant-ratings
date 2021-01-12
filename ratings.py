@@ -41,6 +41,4 @@ def alphabetical_restaurants(filename):
 
     print(f"Result is {sorted_list}")
 
-
-
 alphabetical_restaurants("scores.txt")
