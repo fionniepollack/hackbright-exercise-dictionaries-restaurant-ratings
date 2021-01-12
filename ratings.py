@@ -12,8 +12,7 @@ def alphabetical_restaurants(filename):
     # Define empty dictionary
     restaurants = {}
 
-
-    # Loop over filename to get
+    # Loop over filename to get each line in score_file
     for line in scores_file:
         
         # Remove trailing white space
@@ -28,12 +27,15 @@ def alphabetical_restaurants(filename):
 
         restaurants[key] = value
 
+    # Prompt user for input, restaurant name and score
     restaurant_name = input("What is the restaurant name? ")
     restaurant_score = input("Score: ")
 
-    # Add user restaurant and score to dictionary
+    # Add user input, restaurant and score, to dictionary
     restaurants[restaurant_name] = restaurant_score
 
+    # Use .items() to get a list of dictionary entries
+    # Use sorted() to sort restaurants alphabetically
     sorted_list = sorted(restaurants.items())
     # sorted_list = sorted(sorted_list)
 
